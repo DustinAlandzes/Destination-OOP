@@ -26,7 +26,7 @@ describe("Plane", () => {
 
     it("setPassengers()", () => {
         const plane = new Plane("company", "origin", "destination");
-        const person = new Person()
+        const person = new Person("name", "destination")
         plane.setPassengers(person)
         expect(plane.getPassengers()).toEqual([person]);
     })

@@ -1,4 +1,5 @@
 const Bag = require("../../classes/Bag");
+const Person = require("../../classes/Person");
 
 describe("Bag", () => {
     it("Creates instance", () => {
@@ -19,7 +20,7 @@ describe("Bag", () => {
 
     it("setOwner method", () => {
         const bag = new Bag(100, 1);
-        const person = {};
+        const person = new Person("name", "destination");
         bag.setOwner(person)
         expect(bag.getOwner()).toStrictEqual(person);
     })
